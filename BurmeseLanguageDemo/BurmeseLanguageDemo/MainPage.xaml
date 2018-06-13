@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="BurmeseLanguageDemo.MainPage">
+    <ContentPage Title="Compare">
+        <StackLayout Padding="20"
+                     Spacing="0">
+            <Entry Placeholder="Enter text"
+                   TextChanged="TextChanged"
+                   x:Name="EntryTyping"
+                   HorizontalOptions="FillAndExpand"
+                   Text=" ေနရဲေဇာ္"/>
+
+            <Label Text="Zawgyi:"
+                   FontSize="12"
+                   Margin="0,20,0,0"/>
+
+            <Label x:Name="LabelZawgyi"  
+                   FontSize="20">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Zawgyi-One" />
+                        <On Platform="Android" Value="ZawgyiOne.ttf#Zawgyi-One" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <Label Text="Unicode:"
+                   FontSize="12"
+                   Margin="0,20,0,0"/>
+
+            <Label x:Name="LabelUnicode"  
+                   FontSize="20"/>
+        </StackLayout>
+    </ContentPage>
+    
+    <ContentPage Title="Switch">
+        <StackLayout Padding="20"
+                     Spacing="0">
+            <Entry Placeholder="Enter text"
+                   TextChanged="TextChanged2"
+                   x:Name="EntryTyping2"
+                   HorizontalOptions="FillAndExpand"
+                   Text=" ေနရဲေဇာ္"/>
+
+            <StackLayout Orientation="Horizontal"
+                         Margin="0,20">
+                <Label Text="Unicode"
+                       FontSize="12"/>
+
+                <Switch IsToggled="False"
+                        Toggled="Switch_OnToggled"
+                        x:Name="Toggle"/>
+
+                <Label Text="Zawgyi"
+                       FontSize="12"/>
+            </StackLayout>
+
+            <Label x:Name="LabelDisplay"  
+                   FontSize="20"/>
+
+            <Label x:Name="LabelDisplayBold"
+                   FontAttributes="Bold"
+                   FontSize="20"
+                   Margin="0,15"/>
+
+            <Label x:Name="LabelDisplayItalic"  
+                   FontAttributes="Italic"
+                   FontSize="20"/>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>
+    
+

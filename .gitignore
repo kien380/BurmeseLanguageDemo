@@ -3,3 +3,9 @@
 ################################################################################
 
 /.vs/BurmeseLanguageDemo
+/BurmeseLanguageDemo/BurmeseLanguageDemo/bin/Debug/netstandard2.0
+/BurmeseLanguageDemo/BurmeseLanguageDemo/obj
+/BurmeseLanguageDemo/BurmeseLanguageDemo.Android/bin/Debug
+/BurmeseLanguageDemo/BurmeseLanguageDemo.Android/obj
+/BurmeseLanguageDemo/BurmeseLanguageDemo.Android/Resources/Resource.designer.cs
+/BurmeseLanguageDemo/BurmeseLanguageDemo.Android/BurmeseLanguageDemo.Android.csproj.user
